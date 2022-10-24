@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/black" android:width="2dp"></stroke>
+    <corners android:radius="10dp"></corners>
+    <padding
+        android:bottom="@dimen/button_padding"
+        android:left="@dimen/button_padding"
+        android:right="@dimen/button_padding"
+        android:top="@dimen/button_padding"></padding>
+</shape>
