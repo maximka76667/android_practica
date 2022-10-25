@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    // Screen 1
     <style name="buttonText">
-    <item name="android:textAlignment">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    // Screen 2
+    <style name="screen_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="title_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/anadir_contacto</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">@dimen/field_margin</item>
+    </style>
+
+    <style name="field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="field__layout">
+        <item name="android:layout_below">@+id/field__title_nombre</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginBottom">@dimen/field_margin</item>
+    </style>
+
+    <style name="label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">@dimen/field_margin</item>
+        <item name="android:layout_marginStart">@dimen/field_margin</item>
+        <item name="android:layout_marginEnd">@dimen/field_margin</item>
+        <item name="android:background">#00b</item>
+    </style>
+
+    // Titles
+    <style name="title_nombre" parent="label">
+        <item name="android:text">@string/nombre</item>
+    </style>
+    <style name="title_apellidos" parent="label">
+        <item name="android:text">@string/apellidos</item>
+    </style>
+    <style name="title_email" parent="label">
+        <item name="android:text">@string/email</item>
+    </style>
+    <style name="title_sexo" parent="label">
+        <item name="android:text">@string/sexo</item>
+    </style>
+    <style name="title_grupo" parent="label">
+        <item name="android:text">@string/grupo</item>
+    </style>
+    // ***Titles***
+
+    <style name="input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_margin">@dimen/field_margin</item>
+        <item name="android:padding">@dimen/field_padding</item>
+    </style>
+
+    // Inputs
+    <style name="input_nombre" parent="input">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:hint">@string/nombre</item>
+    </style>
+    <style name="input_apellidos" parent="input">
+        <item name="android:hint">@string/apellidos</item>
+    </style>
+    <style name="input_email" parent="input">
+        <item name="android:hint">@string/email</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+    // ***Inputs***
+
+    // Buttons
+    <style name="toggleButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/field_margin</item>
+        <item name="android:textOff">VIP</item>
+        <item name="android:textOn">VIP</item>
+    </style>
+
+    <style name="checkButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    // ***Buttons***
+
+    <style name="radioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 </resources>

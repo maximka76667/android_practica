@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Agenda y contactos"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#914848"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="Acme Inc." />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheading"
+        android:layout_marginBottom="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/calendario_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:background="@drawable/bg_button"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/calendario" />
+
+            <ImageButton
+                android:id="@+id/nuevo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:background="@drawable/bg_button"
+                android:layout_marginLeft="3dp"
+                tools:srcCompat="@drawable/nuevo" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/calendario_text"
+                style="@style/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agenda" />
+
+            <TextView
+                android:id="@+id/nuevo_text"
+                style="@style/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo evento" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/contactos_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_button"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/usuarios" />
+
+            <ImageButton
+                android:id="@+id/opciones_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_button"
+                android:layout_marginLeft="3dp"
+                tools:srcCompat="@drawable/calendario_background" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/contactos_text"
+                style="@style/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contactos" />
+
+            <TextView
+                android:id="@+id/opciones_text"
+                style="@style/buttonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opciones" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_copyright"
+        android:fontFamily="serif"
+        android:text="Acme Inc. © 2022" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/copyright"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:text="http://www.acme.com" />
+
+</RelativeLayout>

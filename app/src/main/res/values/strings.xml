@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">android_practica</string>
+    <string name="nombre">Nombre</string>
+    <string name="anadir_contacto">Añadir contacto</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="email">Email</string>
+    <string name="sexo">Sexo</string>
+    <string name="grupo">Grupo</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="amigos">Amigos</string>
+    <string name="familiares">Familiares</string>
+    <string name="trabajo">Trabajo</string>
 </resources>
